@@ -1,9 +1,16 @@
 import React from 'react';
 
 const Footer = () => {
+
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    alert("Hello just clicked from footer")
+    
+  }
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+            <footer className="footer sm:footer-horizontal  text-base-content p-10">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
@@ -24,7 +31,7 @@ const Footer = () => {
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
   </nav>
-  <form>
+  <form onClick={handleSubmit}>
     <h6 className="footer-title">Newsletter</h6>
     <fieldset className="w-80">
       <label>Enter your email address</label>

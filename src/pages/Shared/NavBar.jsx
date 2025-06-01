@@ -7,7 +7,10 @@ const NavBar = () => {
   const links = <>
       <NavLink className='ml-2' to='/'>Home</NavLink>
       <NavLink className='ml-2' to='/'>About</NavLink>
-      <NavLink className='ml-2' to='/'>Home</NavLink>
+
+      {
+        user && <NavLink className='ml-2' to='/myapplications'>My Applications</NavLink>
+      }
      
 
   </>
